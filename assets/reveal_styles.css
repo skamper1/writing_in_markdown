@@ -1,0 +1,15 @@
+.quarto-title-block .slide-background-content {
+    background-color: #f9c909;
+}
+
+.quarto-title-block h1, .quarto-title-block p, .quarto-title-block div{
+    color: black;
+}
+
+section.reallysmaller{
+    font-size: .6em;
+}
+
+.border{
+    border: 1px solid black;
+}

@@ -1,0 +1,274 @@
+---
+title: "Writing in Markdown"
+author: "Sam Kamperis"
+date: "February 2025"
+dateformat: "MMMM YYYY"
+execute:
+  echo: false
+  warning: false
+knitr:
+  opts_chunk:
+    out.width: "100%"
+    fig.retina: 2
+format:
+  revealjs:
+    title-slide-attributes: 
+      data-background-image: assets/brookes_logo_white.png
+      data-background-size: 10%
+      data-background-position: 88% 15%
+    css: [assets/reveal_styles.css]
+    menu: true
+    controls: true
+    slide-number: true
+    show-slide-number: all
+    preview-links: false
+    progress: false
+    chalkboard:
+      theme: whiteboard
+      chalk-effect: 0
+      buttons: true
+    multiplex: false
+    logo: assets/brookes_logo_charcoal.png
+    footer: "Year 2 Academic Advisor Sessions"
+    scrollable: true
+    include-in-header:
+    - text: |
+        <link rel = "shortcut icon" href = "assets/favicon_charcoal.png" />
+    code-fold: false
+    code-summary: "Show the code"
+    fig-width: 3.5
+    fig-height: 2.5
+    
+---
+
+
+
+
+## Introduction
+
+Markdown is a lightweight markup language used for formatting plain text. It allows you to add formatting elements like **bold**, *italic*, headings, lists, links, and more without using complex HTML or rich text editors. It's widely used for writing documentation, README files, notes, and even academic papers.
+
+
+
+```{r}
+#| echo: false
+#| purl: false
+#| include: false
+
+bullet_list <- function(items){paste("*", items, collapse = "\n\n")}
+
+```
+
+
+
+
+## Learning Outcomes {.smaller}
+
+```{r, include = FALSE}
+learning_outcomes <- c(
+  "Understand and use markdown syntax to write structured documents.",
+  "Use slide dividers to convert a hackmd document into slides.",
+  "Update a readme on github with markdown.",
+  "Paste 'as markdown' into google docs."
+  
+)
+```
+
+`r bullet_list(learning_outcomes)`
+
+
+
+
+## HackMD
+
+HackMD is a popular online markdown editor with live preview that works without logging in.
+
+You can also share documents for collaborative work.
+
+
+**Open a new HackMD note to experiment with Markdown**
+
+<https://hackmd.io/new>
+
+![](assets/ss_hackmd.png)
+
+
+
+
+
+
+
+## Markdown Syntax - Headings
+
+Headings in Markdown are used to structure content by defining different levels of section titles. They are created using the `#` symbol, with the number of `#` signs indicating the heading level.
+
+::::{.columns}
+:::{.column width=50%}
+```
+## This is a heading
+
+### A Subheading
+
+#### A really small heading
+```
+
+:::
+:::{.column width=50%}
+![](headings.png)
+:::
+::::
+
+
+
+
+## Text Formatting and Links
+
+
+```
+**Bold**  *Italics*
+```
+**Bold**  *Italics*
+
+```
+[Link to HackMD](https://hackmd.io/new)
+```
+[Link to HackMD](https://hackmd.io/new)
+
+
+## Lists
+
+```
+* list entry 1
+* list entry 2
+ - *sub list* entry 1
+ - *sub list* entry 2
+* list entry 3
+```
+
+* list entry 1
+* list entry 2
+ - *sub list* entry 1
+ - *sub list* entry 2
+* list entry 3
+
+
+
+## Code Chunks
+
+You can include code chunks in your markdown. Some formats (such as RMarkdown and quarto) allow options for this code execute when a document is rendered.
+
+````
+```
+# Print "Hello, World!"
+print("Hello, World!")
+
+# Swapping two variables
+a = 5
+b = 10
+
+print(f"Before swapping: a = {a}, b = {b}")
+
+b, a = a, b
+
+print(f"After swapping: a = {a}, b = {b}")
+```
+````
+
+
+## Syntax Images
+
+```
+![](assets/rhino.jpg)
+
+```
+
+![](assets/rhino.jpg)
+
+
+
+
+
+## TeX
+
+
+
+Created by Donald Knuth, initially released in 1977. The standard for typesetting mathematics. 
+
+Usually accessed via LaTeX, to make it easy(ish) for mathematicians. 
+
+Can be used to make pdfs for written documents or slides (*beamer*).
+
+
+![](assets/donald_knuth.jpg)
+
+
+
+
+## Why Latex?
+
+It removes the need to graphically edit your documents. Everything is written in text format that "marks up" your document.
+
+
+
+$$ax^2 + bx + c = 0,$$ 
+
+$$x =  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
+
+Rendered from
+
+```
+$$ \textrm{for } ax^2 + bx + c = 0,$$ 
+$$ x =  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
+```
+
+
+
+
+
+
+
+
+
+## Further Latex Examples
+
+
+```
+$$ax^2$$
+```
+
+$$ax^2$$
+
+
+
+```
+$$\frac{e^x^2}{\log{5}}$$
+```
+
+$$y = \frac{e^{x^2}}{\log{5}}$$
+
+## Slide mode in hackmd
+
+Different markdown formats create slides slightly differently. They require some markdown symbol to identify where the slide dividers are.
+
+Some formats use a headings up to a certain number of hashes.
+
+HackMD uses a three dash `---` divider on a new line with gaps either side.
+
+To convert a HackMD to slide mode, just add the following to the top of the markdown
+
+```
+---
+type: slide
+---
+```
+
+This is YAML - which stands for **Y**et another **M**arkup **L**anguage  
+
+
+
+
+## Recap {.smaller}
+
+You should now be able to:
+
+`r bullet_list(learning_outcomes)`
