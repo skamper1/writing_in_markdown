@@ -236,7 +236,7 @@ print(f"After swapping: a = {a}, b = {b}")
 <section id="why-latex" class="slide level2">
 <h2>Why Latex?</h2>
 <p>It removes the need to graphically edit your documents. Everything is written in text format that “marks up” your document.</p>
-<p><span class="math display">\[ax^2 + bx + c = 0,\]</span></p>
+<p><span class="math display">\[ \textrm{for } ax^2 + bx + c = 0,\]</span></p>
 <p><span class="math display">\[x =  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.\]</span></p>
 <p>Rendered from</p>
 <pre><code>$$ \textrm{for } ax^2 + bx + c = 0,$$ 
@@ -249,7 +249,7 @@ $$ x =  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$</code></pre>
 <pre><code>$$\frac{e^x^2}{\log{5}}$$</code></pre>
 <p><span class="math display">\[y = \frac{e^{x^2}}{\log{5}}\]</span></p>
 </section>
-<section id="slide-mode-in-hackmd" class="slide level2">
+<section id="slide-mode-in-hackmd" class="slide level2 smaller">
 <h2>Slide mode in hackmd</h2>
 <p>Different markdown formats create slides slightly differently. They require some markdown symbol to identify where the slide dividers are.</p>
 <p>Some formats use a headings up to a certain number of hashes.</p>
@@ -260,6 +260,42 @@ type: slide
 ---</code></pre>
 <p>This is YAML - which stands for <strong>Y</strong>et another <strong>M</strong>arkup <strong>L</strong>anguage</p>
 </section>
+<section id="github" class="slide level2">
+<h2>Github</h2>
+<p>You can add markdown files to a github repository and they’ll be shown formatted.</p>
+
+<img data-src="assets/ss_github_1.png" class="r-stretch"></section>
+<section id="github-editing-and-previewing-1" class="slide level2">
+<h2>Github Editing and Previewing (1)</h2>
+
+<img data-src="assets/ss_github_2.png" class="r-stretch"></section>
+<section id="github-editing-and-previewing-2" class="slide level2">
+<h2>Github Editing and Previewing (2)</h2>
+
+<img data-src="assets/ss_github_3.png" class="r-stretch"></section>
+<section id="google-docs" class="slide level2">
+<h2>Google Docs</h2>
+<p>You can also paste markdown straight into google docs (but you can’t get it out again!)</p>
+<p>Try pasting the following in (<em>you need to right click and select ‘paste as markdown’</em>):</p>
+<pre><code>* list entry 1
+* list entry 2
+  - *sub list* entry 1
+  - *sub list* entry 2
+* list entry 3
+
+
+**Bold**  *Italics*
+
+[Link to HackMD](https://hackmd.io/new)</code></pre>
+</section>
+<section id="google-docs-screenshot-1" class="slide level2">
+<h2>Google Docs Screenshot 1</h2>
+
+<img data-src="assets/ss_google_docs_1.png" class="r-stretch"></section>
+<section id="google-docs-screenshot-2" class="slide level2">
+<h2>Google Docs Screenshot 2</h2>
+
+<img data-src="assets/ss_google_docs_2.png" class="r-stretch"></section>
 <section id="recap" class="slide level2 smaller">
 <h2>Recap</h2>
 <p>You should now be able to:</p>

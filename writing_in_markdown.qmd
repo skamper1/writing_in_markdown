@@ -210,7 +210,7 @@ It removes the need to graphically edit your documents. Everything is written in
 
 
 
-$$ax^2 + bx + c = 0,$$ 
+$$ \textrm{for } ax^2 + bx + c = 0,$$ 
 
 $$x =  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
 
@@ -246,7 +246,7 @@ $$\frac{e^x^2}{\log{5}}$$
 
 $$y = \frac{e^{x^2}}{\log{5}}$$
 
-## Slide mode in hackmd
+## Slide mode in hackmd {.smaller}
 
 Different markdown formats create slides slightly differently. They require some markdown symbol to identify where the slide dividers are.
 
@@ -265,7 +265,51 @@ type: slide
 This is YAML - which stands for **Y**et another **M**arkup **L**anguage  
 
 
+## Github
 
+You can add markdown files to a github repository and they'll be shown formatted.
+
+![](assets/ss_github_1.png)
+
+
+## Github Editing and Previewing (1)
+
+![](assets/ss_github_2.png)
+
+
+## Github Editing and Previewing (2)
+
+![](assets/ss_github_3.png)
+
+
+## Google Docs
+
+You can also paste markdown straight into google docs (but you can't get it out again!)
+
+Try pasting the following in (*you need to right click and select 'paste as markdown'*):
+
+```
+* list entry 1
+* list entry 2
+  - *sub list* entry 1
+  - *sub list* entry 2
+* list entry 3
+
+
+**Bold**  *Italics*
+
+[Link to HackMD](https://hackmd.io/new)
+```
+
+
+## Google Docs Screenshot 1
+
+![](assets/ss_google_docs_1.png)
+
+
+## Google Docs Screenshot 2
+
+![](assets/ss_google_docs_2.png)
 
 ## Recap {.smaller}
 
