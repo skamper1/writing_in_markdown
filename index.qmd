@@ -113,7 +113,7 @@ Headings in Markdown are used to structure content by defining different levels 
 
 :::
 :::{.column width=50%}
-![](headings.png)
+![](assets/headings.png)
 :::
 ::::
 
@@ -177,11 +177,11 @@ print(f"After swapping: a = {a}, b = {b}")
 ## Syntax Images
 
 ```
-![](assets/rhino.jpg)
+![](https://skamper1.github.io/writing_in_markdown/assets/rhino.jpg)
 
 ```
 
-![](assets/rhino.jpg)
+![](https://skamper1.github.io/writing_in_markdown/assets/rhino.jpg)
 
 
 
@@ -299,3 +299,9 @@ Try pasting the following in (*you need to right click and select 'paste as mark
 You should now be able to:
 
 `r bullet_list(learning_outcomes)`
+
+You can view the repository for these slides here:
+
+<https://github.com/skamper1/writing_in_markdown>
+
+
