@@ -1,8 +1,8 @@
 ---
 title: "Writing in Markdown"
 author: "Sam Kamperis"
-date: "February 2025"
-dateformat: "MMMM YYYY"
+date: "2025-02-01"
+date-format: "MMMM YYYY"
 execute:
   echo: false
   warning: false
@@ -67,7 +67,6 @@ bullet_list <- function(items){paste("*", items, collapse = "\n\n")}
 ```{r, include = FALSE}
 learning_outcomes <- c(
   "Understand and use markdown syntax to write structured documents.",
-  "Use slide dividers to convert a hackmd document into slides.",
   "Update a readme on github with markdown.",
   "Paste 'as markdown' into google docs."
   
@@ -246,23 +245,7 @@ $$\frac{e^x^2}{\log{5}}$$
 
 $$y = \frac{e^{x^2}}{\log{5}}$$
 
-## Slide mode in hackmd {.smaller}
 
-Different markdown formats create slides slightly differently. They require some markdown symbol to identify where the slide dividers are.
-
-Some formats use a headings up to a certain number of hashes.
-
-HackMD uses a three dash `---` divider on a new line with gaps either side.
-
-To convert a HackMD to slide mode, just add the following to the top of the markdown
-
-```
----
-type: slide
----
-```
-
-This is YAML - which stands for **Y**et another **M**arkup **L**anguage  
 
 
 ## Github
