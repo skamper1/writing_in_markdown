@@ -1,8 +1,6 @@
 ---
 title: "Writing in Markdown"
 author: "Sam Kamperis"
-date: "2025-02-01"
-date-format: "MMMM YYYY"
 execute:
   echo: false
   warning: false
@@ -267,7 +265,26 @@ You can add markdown files to a github repository and they'll be shown formatted
 
 ## Google Docs
 
-You can also paste markdown straight into google docs (but you can't get it out again!)
+You can also copy and paste as markdown in google docs. You will need to enable markdown in your settings.
+
+::::{.columns}
+:::{.column width=50%}
+
+Tools -> Preferences
+
+![](assets/markdown_settings_1.png){width=75%}
+:::
+
+:::{.column width=50%}
+
+Check enable markdown
+
+![](assets/markdown_settings_2.png){width=50%}
+:::
+
+::::
+
+## Google Docs (2)
 
 Try pasting the following in (*you need to right click and select 'paste as markdown'*):
 
